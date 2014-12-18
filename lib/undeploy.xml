@@ -55,7 +55,7 @@
  <antcall target="generateDestructiveChanges2"/>
  <sf:deploy purgeOnDelete="true" username="${sf.username}" password="${sf.password}" serverurl="${sf.server}" deployRoot="${stage.dir}/deploy" singlePackage="true" runAllTests="false" rollbackOnError="false" allowMissingFiles="true" maxPoll="2000" pollWaitMillis="5000"/>
 
- <antcall target="deleteDocuments"/>
+ <!--<antcall target="deleteDocuments"/>-->
 
  <delete dir="${stage.dir}" /> 
  
